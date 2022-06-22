@@ -98,7 +98,7 @@
     </style>
   <body>
     <header id="header">
-      <h1><a href=index.php>LEEHYUN SYSTEM</a></h1>
+      <h1><a href=index.html>LEEHYUN SYSTEM</a></h1>
     </header>
 
     <div class="about">
