@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>연습</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Slab:wght@900&display=swap');
+      body {
+        background-color: black;
+      }
+      a {
+        text-decoration-line: none;
+      }
+      #header {
+        text-align: center;
+        padding-top: 20px;
+      }
+      #header h1 {
+         font-family: 'Poppins', sans-serif;
+         font-size: 50px;
+      }
+      #header a {
+        color:white;
+      }
+      #project{
+        position: absolute;
+        top : 30%;
+        left: 4%;
+        right: 5%;
+        margin-bottom: 30px;
+      }
+      #project #a10 p{
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 25px;
+        margin-bottom: 30px;
+        color : white;
+        font-weight:700;
+      }
+
+    </style>
+  <body>
+    <header id="header">
+        <h1><a href=index.html>LEEHYUN SYSTEM</a></h1>
+    </header>
+
+    <div id="project">
+      <div id="a10">
+        <p><a id="sil1" style="cursor:pointer">DELTA DLP CUBE 실적</a></p>
+        <img id="sil1_img" style="display:none;" src="sil1.png">
+        <p></p>
+        <p><a id="sil2" style="cursor:pointer">유지보수 실적</a></p>
+        <img id="sil2_img" style="display:none;" src="sil2.png" width="477">
+        <p></p>
+        <p><a id="sul" style="cursor:pointer">DELTA DLP CUBE 설치 사례</a></p>
+        <img id="sul1_img" style="display:none;" src="sul1.png">
+        <p></p>
+        <img id="sul2_img" style="display:none;" src="sul2.png">
+        <p></p>
+        <img id="sul3_img" style="display:none;" src="sul3.png">
+        <p></p>
+        <img id="sul4_img" style="display:none;" src="sul4.png">
+        <p></p>
+        <img id="sul5_img" style="display:none;" src="sul5.png">
+        <p></p>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+          $('#sil1').on("click", function(){
+             $('#sil1_img').toggle();
+          });
+       });
+       $(document).ready(function(){
+          $('#sil2').on("click", function(){
+             $('#sil2_img').toggle();
+          });
+       });
+       $(document).ready(function(){
+          $('#sul').on("click", function(){
+             $('#sul1_img').toggle();
+             $('#sul2_img').toggle();
+             $('#sul3_img').toggle();
+             $('#sul4_img').toggle();
+             $('#sul5_img').toggle();
+          });
+       });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
